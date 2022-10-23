@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Antarex - Оплата</title>
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="194px" height="33px" alt="Р2Р Эквайринг">
+					</a>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- payment -->
+			<div class="payment" id="payment">
+				<div class="payment__wrap">
+					<!-- stage 1 -->
+					<div class="payment__wrapper">
+						<h3 class="payment__title">Выберите удобный способ оплаты:</h3>
+						<ul class="payment-method">
+							<li class="payment-method__item">
+								<label for="payment-method-01" class="payment-method__elem">
+									<input type="radio" id="payment-method-01" class="payment-method__input" name="payment-method">
+									<div class="payment-method__group">
+										<img src="img/sberbank.png" alt="СБЕРБАНК" class="payment-method__img">
+									</div>
+								</label>
+							</li>
+							<li class="payment-method__item">
+								<label for="payment-method-02" class="payment-method__elem">
+									<input type="radio" id="payment-method-02" class="payment-method__input" name="payment-method">
+									<div class="payment-method__group">
+										<img src="img/tinkoff.png" alt="Тинькофф Банк" class="payment-method__img">
+									</div>
+								</label>
+							</li>
+							<li class="payment-method__item">
+								<label for="payment-method-03" class="payment-method__elem">
+									<input type="radio" id="payment-method-03" class="payment-method__input" name="payment-method">
+									<div class="payment-method__group">
+										<img src="img/alfabank.png" alt="Альфа Банк" class="payment-method__img">
+									</div>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<!-- stage 2 -->
+					<div class="payment__wrapper">
+						<a href="#" class="payment__back back-btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-back"></use>
+							</svg>
+							<span>Назад</span>
+						</a>
+						<div class="payment__block">
+							<h3 class="payment__title">Оплата заказа</h3>
+							<div class="c-card payment__card">
+								<div class="c-card__top">
+									<picture class="c-card__logotype">
+										<img src="img/sberbank.png" alt="СБЕРБАНК">
+									</picture>
+									<span class="c-card__timer">14:40</span>
+								</div>
+								<div class="c-card__group">
+									<span class="c-card__help">Номер карты</span>
+									<div class="c-card__inner">
+										<span class="c-card__value">0000 0000 0000 0000</span>
+										<button class="c-card__btn" aria-label="Скопировать">
+											<svg class="c-card__btn-icon">
+												<use xlink:href="img/sprite.svg#icon-copy"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="c-card__group">
+									<span class="c-card__help">Сумма перевода</span>
+									<div class="c-card__inner">
+										<span class="c-card__value">12 590 RUB</span>
+										<button class="c-card__btn" aria-label="Скопировать">
+											<svg class="c-card__btn-icon">
+												<use xlink:href="img/sprite.svg#icon-copy"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<span class="payment__subtitle">Переведите указанную сумму на номер карты из формы выше</span>
+							<a href="#" class="payment__btn btn btn--green">Я оплатил</a>
+						</div>
+					</div>
+					<!-- stage 3 -->
+					<div class="payment__wrapper payment__wrapper--active">
+						<a href="#" class="payment__back back-btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-back"></use>
+							</svg>
+							<span>Назад</span>
+						</a>
+						<div class="payment__block">
+							<h3 class="payment__title">Платеж в обработке</h3>
+							<div class="c-treatment payment__treatment">
+								<span class="c-treatment__value">14:40</span>
+								<span class="c-treatment__title">Ожидайте завершения обработки</span>
+							</div>
+						</div>
+					</div>
+					<!-- stage 4 -->
+					<div class="payment__wrapper">
+						<a href="#" class="payment__back back-btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-back"></use>
+							</svg>
+							<span>Назад</span>
+						</a>
+						<!-- if success -->
+						<div class="payment__block">
+							<h3 class="payment__title">Оплата прошла успешно</h3>
+							<div class="payment__group">
+								<span class="payment__help">Сумма платежа</span>
+								<span class="payment__sum">12 590 RUB</span>
+							</div>
+							<a href="#" class="payment__btn btn btn--green">Вернуться к продавцу</a>
+						</div>
+						<!-- if error -->
+						<div class="payment__block payment__block--hidden"> <!-- remove 'payment__block--hidden' for visible -->
+							<h3 class="payment__title">Оплата не прошла</h3>
+							<span class="payment__subtitle">Ошибка во время операции.</span>
+							<a href="#" class="payment__btn btn btn--green">Вернуться к продавцу</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of payment -->
+		</div>
+		<!-- end of content -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
