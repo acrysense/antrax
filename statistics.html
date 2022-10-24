@@ -181,6 +181,45 @@
 							<span class="c-balance__help">Баланс: RUB</span>
 							<span class="c-balance__value">1225.97</span>
 						</div>
+						<button class="cabinet-filter-btn" id="cabinet-filter-toggle">
+							<span>Фильтры</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-filter"></use>
+							</svg>
+						</button>
+						<div class="cabinet-filter cabinet__filter" id="cabinet-filter">
+							<div class="cabinet-filter__inner cabinet-filter__inner--nowrap">
+								<div class="c-date cabinet-filter__date">
+									<span class="c-date__help">от</span>
+									<div class="c-date__group">
+										<div class="c-date__input-group">
+											<input type="text" class="c-date__input" placeholder="01.10.2022" data-inputmask="'mask': '99.99.9999'">
+											<svg class="c-date__icon">
+												<use xlink:href="img/sprite.svg#icon-calendar"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="c-date cabinet-filter__date">
+									<span class="c-date__help">до</span>
+									<div class="c-date__group">
+										<div class="c-date__input-group">
+											<input type="text" class="c-date__input" placeholder="01.10.2022" data-inputmask="'mask': '99.99.9999'">
+											<svg class="c-date__icon">
+												<use xlink:href="img/sprite.svg#icon-calendar"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="cabinet-filter__select">
+									<select class="js-select">
+										<option value="0">RUB</option>
+										<option value="1">USD</option>
+										<option value="2">EUR</option>
+									</select>
+								</div>
+							</div>
+						</div>
 						<div class="cabinet__table-wrap">
 							<div class="cabinet__top">
 								<div class="cabinet__group">
