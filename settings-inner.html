@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Antarex</title>
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="194px" height="33px" alt="Р2Р Эквайринг">
+					</a>
+					<div class="header__group">
+						<button class="square-btn header__square-btn">
+							<svg class="square-btn__icon">
+								<use xlink:href="img/sprite.svg#icon-notification"></use>
+							</svg>
+						</button>
+						<button class="square-btn square-btn--grey header__square-btn">
+							<svg class="square-btn__icon">
+								<use xlink:href="img/sprite.svg#icon-exit"></use>
+							</svg>
+						</button>
+					</div>
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- mobile menu -->
+		<div class="mobile-menu" id="mobile-menu">
+			<div class="mobile-menu__wrapper">
+				<nav class="mobile-menu__nav">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-transactions"></use>
+								</svg>
+								<span>Транзакции</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-statistics"></use>
+								</svg>
+								<span>Статистика</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-lock"></use>
+								</svg>
+								<span>Смена пароля</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-settings"></use>
+								</svg>
+								<span>Работа с API</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-documents"></use>
+								</svg>
+								<span>Документация</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notification"></use>
+								</svg>
+								<span>Уведомления</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<button class="mobile-menu__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-exit"></use>
+								</svg>
+								<span>Выход</span>
+							</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+		<!-- end of mobile menu -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- cabinet -->
+			<div class="cabinet" id="cabinet">
+				<div class="cabinet__wrap">
+					<nav class="cabinet-nav">
+						<ul class="cabinet-nav__list">
+							<li class="cabinet-nav__item">
+								<a href="index.html" class="cabinet-nav__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-transactions"></use>
+									</svg>
+									<span>Транзакции</span>
+								</a>
+							</li>
+							<li class="cabinet-nav__item">
+								<a href="statistics.html" class="cabinet-nav__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-statistics"></use>
+									</svg>
+									<span>Статистика</span>
+								</a>
+							</li>
+							<li class="cabinet-nav__item">
+								<a href="change-password.html" class="cabinet-nav__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-lock"></use>
+									</svg>
+									<span>Смена пароля</span>
+								</a>
+							</li>
+							<li class="cabinet-nav__item cabinet-nav__item--active">
+								<a href="settings.html" class="cabinet-nav__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-settings"></use>
+									</svg>
+									<span>Работа с API</span>
+								</a>
+							</li>
+							<li class="cabinet-nav__item">
+								<a href="documentation.html" class="cabinet-nav__tab">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-documents"></use>
+									</svg>
+									<span>Документация</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="cabinet__wrapper">
+						<div class="c-balance">
+							<span class="c-balance__help">Баланс: RUB</span>
+							<span class="c-balance__value">1225.97</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of cabinet -->
+		</div>
+		<!-- end of content -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

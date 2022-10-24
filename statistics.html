@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Antarex - Транзакции</title>
+	<title>Antarex - Статистика</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -134,7 +134,7 @@
 				<div class="cabinet__wrap">
 					<nav class="cabinet-nav">
 						<ul class="cabinet-nav__list">
-							<li class="cabinet-nav__item cabinet-nav__item--active">
+							<li class="cabinet-nav__item">
 								<a href="index.html" class="cabinet-nav__tab">
 									<svg>
 										<use xlink:href="img/sprite.svg#icon-transactions"></use>
@@ -142,7 +142,7 @@
 									<span>Транзакции</span>
 								</a>
 							</li>
-							<li class="cabinet-nav__item">
+							<li class="cabinet-nav__item cabinet-nav__item--active">
 								<a href="statistics.html" class="cabinet-nav__tab">
 									<svg>
 										<use xlink:href="img/sprite.svg#icon-statistics"></use>
@@ -184,290 +184,264 @@
 						<div class="cabinet__table-wrap">
 							<div class="cabinet__top">
 								<div class="cabinet__group">
-									<h3 class="cabinet__title">Все заявки</h3>
-									<span class="cabinet__applications">0 заявок</span>
+									<h3 class="cabinet__title">Транзакции на ввод</h3>
 								</div>
-								<div class="cabinet__group">
-									<a href="#" class="cabinet__btn btn">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-export"></use>
-										</svg>
-										<span>Экспорт SCV</span>
-									</a>
-									<a href="#" class="cabinet__btn btn btn--green">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-add"></use>
-										</svg>
-										<span>Создать API</span>
-									</a>
-								</div>
+								<div class="cabinet__group"></div>
 							</div>
 							<div class="cabinet__table">
 								<table class="cabinet-table">
 									<thead class="cabinet-table__head">
 										<tr class="cabinet-table__row">
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__heading">ID</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__heading">Дата создания</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__heading">Название</span>
+												<span class="cabinet-table__heading">Дата</span>
 											</td>
 											<td class="cabinet-table__elem">
 												<span class="cabinet-table__heading">Сумма</span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__heading">Валюта</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__heading">Комиссия</span>
-											</td>
-											<td class="cabinet-table__elem">
 												<span class="cabinet-table__heading">Статус</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__heading">Получатель</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__heading">Имя мида</span>
 											</td>
 										</tr>
 									</thead>
 									<tbody class="cabinet-table__body">
 										<tr class="cabinet-table__row">
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">1245</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__text">1ddb5d1b-69d1-4e56-8822-6340c85b1587</span>
+												<span class="cabinet-table__text">14.10.2022</span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">14.10.2022, 00:16</span>
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">500</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">RUB</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">0</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">Failed</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">55xxxxxxxxxx5179</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">P2P FTD</span>
+												<div class="cabinet-table__status cabinet-table__status--done">Ввод успешный</div>
 											</td>
 										</tr>
 										<tr class="cabinet-table__row">
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">1245</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__text">1ddb5d1b-69d1-4e56-8822-6340c85b1587</span>
+												<span class="cabinet-table__text">14.10.2022</span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">14.10.2022, 00:16</span>
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">500</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">RUB</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">0</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">Failed</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">55xxxxxxxxxx5179</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">P2P FTD</span>
+												<div class="cabinet-table__status">Ввод с ошибкой</div>
 											</td>
 										</tr>
 										<tr class="cabinet-table__row">
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">1245</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__text">1ddb5d1b-69d1-4e56-8822-6340c85b1587</span>
+												<span class="cabinet-table__text">14.10.2022</span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">14.10.2022, 00:16</span>
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">500</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">RUB</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">0</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">Failed</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">55xxxxxxxxxx5179</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">P2P FTD</span>
+												<div class="cabinet-table__status cabinet-table__status--done">Ввод успешный</div>
 											</td>
 										</tr>
 										<tr class="cabinet-table__row">
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">1245</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__text">1ddb5d1b-69d1-4e56-8822-6340c85b1587</span>
+												<span class="cabinet-table__text">14.10.2022</span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">14.10.2022, 00:16</span>
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">500</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">RUB</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">0</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">Failed</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">55xxxxxxxxxx5179</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">P2P FTD</span>
+												<div class="cabinet-table__status cabinet-table__status--done">Ввод успешный</div>
 											</td>
 										</tr>
 										<tr class="cabinet-table__row">
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">1245</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__text">1ddb5d1b-69d1-4e56-8822-6340c85b1587</span>
+												<span class="cabinet-table__text">14.10.2022</span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">14.10.2022, 00:16</span>
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">500</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">RUB</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">0</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">Failed</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">55xxxxxxxxxx5179</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">P2P FTD</span>
+												<div class="cabinet-table__status cabinet-table__status--done">Ввод успешный</div>
 											</td>
 										</tr>
 										<tr class="cabinet-table__row">
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">1245</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__text">1ddb5d1b-69d1-4e56-8822-6340c85b1587</span>
+												<span class="cabinet-table__text">14.10.2022</span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">14.10.2022, 00:16</span>
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
 											</td>
 											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">500</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">RUB</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">0</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">Failed</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">55xxxxxxxxxx5179</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">P2P FTD</span>
-											</td>
-										</tr>
-										<tr class="cabinet-table__row">
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">1245</span>
-											</td>
-											<td class="cabinet-table__elem cabinet-table__elem--limit">
-												<span class="cabinet-table__text">1ddb5d1b-69d1-4e56-8822-6340c85b1587</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">14.10.2022, 00:16</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">500</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">RUB</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">0</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">Failed</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">55xxxxxxxxxx5179</span>
-											</td>
-											<td class="cabinet-table__elem">
-												<span class="cabinet-table__text">P2P FTD</span>
+												<div class="cabinet-table__status cabinet-table__status--done">Ввод успешный</div>
 											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div class="cabinet__bottom">
+						</div>
+						<div class="cabinet__table-wrap">
+							<div class="cabinet__top">
 								<div class="cabinet__group">
-									<span class="cabinet__text">1-20 из 278</span>
+									<h3 class="cabinet__title">Суммы транзакций по дням</h3>
 								</div>
-								<div class="c-pagination cabinet__pagination">
-									<button class="c-pagination__btn c-pagination__btn--prev" aria-label="Назад">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-										</svg>
-									</button>
-									<div class="c-pagination__value">1 из 0</div>
-									<button class="c-pagination__btn c-pagination__btn--next" aria-label="Далее">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-										</svg>
-									</button>
-								</div>
-								<div class="cabinet__group cabinet__group--desktop">
-									<div class="cabinet__select">
-										<select class="js-select is-white">
-											<option value="0">20</option>
-											<option value="1">30</option>
-											<option value="2">40</option>
-										</select>
+								<div class="cabinet__group"></div>
+							</div>
+							<div class="cabinet__table">
+								<table class="cabinet-table">
+									<thead class="cabinet-table__head">
+										<tr class="cabinet-table__row">
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__heading">Дата</span>
+											</td>
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__heading">Сумма</span>
+											</td>
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__heading">Статус</span>
+											</td>
+										</tr>
+									</thead>
+									<tbody class="cabinet-table__body">
+										<tr class="cabinet-table__row">
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">14.10.2022</span>
+											</td>
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
+											</td>
+											<td class="cabinet-table__elem">
+												<div class="cabinet-table__status cabinet-table__status--done">Ввод успешный</div>
+											</td>
+										</tr>
+										<tr class="cabinet-table__row">
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">14.10.2022</span>
+											</td>
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
+											</td>
+											<td class="cabinet-table__elem">
+												<div class="cabinet-table__status">Ввод с ошибкой</div>
+											</td>
+										</tr>
+										<tr class="cabinet-table__row">
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">14.10.2022</span>
+											</td>
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
+											</td>
+											<td class="cabinet-table__elem">
+												<div class="cabinet-table__status cabinet-table__status--blue">Вывод успешный</div>
+											</td>
+										</tr>
+										<tr class="cabinet-table__row">
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">14.10.2022</span>
+											</td>
+											<td class="cabinet-table__elem">
+												<span class="cabinet-table__text">64 482 <span>RUB</span></span>
+											</td>
+											<td class="cabinet-table__elem">
+												<div class="cabinet-table__status cabinet-table__status--purple">Вывод с ошибкой</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="cabinet__table-wrapper">
+							<div class="cabinet__table-wrap">
+								<div class="cabinet__top">
+									<div class="cabinet__group">
+										<h3 class="cabinet__title">Транзакции на ввод</h3>
 									</div>
-									<span class="cabinet__text">на странице</span>
+									<div class="cabinet__group"></div>
+								</div>
+								<div class="cabinet__table">
+									<table class="cabinet-table">
+										<thead class="cabinet-table__head">
+											<tr class="cabinet-table__row">
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__heading">Статус</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__heading">Транзакции</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__heading">Сумма</span>
+												</td>
+											</tr>
+										</thead>
+										<tbody class="cabinet-table__body">
+											<tr class="cabinet-table__row">
+												<td class="cabinet-table__elem">
+													<div class="cabinet-table__status cabinet-table__status--done">Успешно</div>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">31</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">64 482 <span>RUB</span></span>
+												</td>
+											</tr>
+											<tr class="cabinet-table__row">
+												<td class="cabinet-table__elem">
+													<div class="cabinet-table__status">С ошибкой</div>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">218</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">64 482 <span>RUB</span></span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="cabinet__table-wrap">
+								<div class="cabinet__top">
+									<div class="cabinet__group">
+										<h3 class="cabinet__title">Транзакции на вывод</h3>
+									</div>
+									<div class="cabinet__group"></div>
+								</div>
+								<div class="cabinet__table">
+									<table class="cabinet-table">
+										<thead class="cabinet-table__head">
+											<tr class="cabinet-table__row">
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__heading">Статус</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__heading">Транзакции</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__heading">Сумма</span>
+												</td>
+											</tr>
+										</thead>
+										<tbody class="cabinet-table__body">
+											<tr class="cabinet-table__row">
+												<td class="cabinet-table__elem">
+													<div class="cabinet-table__status cabinet-table__status--blue">Успешно</div>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">31</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">64 482 <span>RUB</span></span>
+												</td>
+											</tr>
+											<tr class="cabinet-table__row">
+												<td class="cabinet-table__elem">
+													<div class="cabinet-table__status cabinet-table__status--purple">С ошибкой</div>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">0</span>
+												</td>
+												<td class="cabinet-table__elem">
+													<span class="cabinet-table__text">0 <span>RUB</span></span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
